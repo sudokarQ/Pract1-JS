@@ -9,17 +9,20 @@
 </head>
 
 <body>
+    <button onclick="changeName()">Нажми меня, please!</button>
+    <br>
+    <p id="text"> asd</p>
+
     <script>
         function changeName() {
             admin = "Егор Андреевич";
-            alert("Нажми меня, please!");
-            document.write(name + "<br>" + admin);
+            document.getElementById("text").innerHTML = name + "<br>" + admin;
         }
         let name = "Виталий Валентинович";
         let admin;
         admin = name;
-        alert(admin);
-        changeName();
+        document.getElementById("text").innerHTML = admin;
+
 
     </script>
 </body>
